@@ -1,5 +1,4 @@
-### Description
-#### Misc
+### (MISC) Git Good
 I'm so good at git! Sometimes I commit a secret... but I can just change it!
 
 ### Solution

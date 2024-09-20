@@ -1,15 +1,11 @@
-### Description
-Just made a sweet webpage! It basically echoes whatever you input. Super cool, and 100% secure
-now that I fixed a small bug in my application!
+### (WEB) Tier-2
+Just made a sweet webpage! It basically echoes whatever you input. Super cool, and 100% secure; some pesky attackers can't get past my defenses now.
 
-### Build instructions
-use docker compose to build :)
+### Solution
+Simple command injection... or is it?
+This time, the flag.txt is not readable! However, a sneaky attacker can run `sudo -l` and see that they have root grep permissions ;)
+
+Use grep to get the flag! For example. `grep -ir ctf`
 
 ### Flag
-CTF{j4v4scr1pt-byp4ss3r-1nj3ct10n}
-
-### Answer
-Simple command injection :) --> "x && cat flag.txt"
-
-However, this time, there is client-side protection with JavaScript! But we know that we can't trust execution on client side code ..!
-So, the attacker can just either remove the javascript or make a manual web request with something like BurpSuite or DevTools :)
+CTF{pr1v3sc-inj3ct10n}

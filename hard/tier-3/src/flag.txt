@@ -1,1 +1,0 @@
-CTF{pr1v3sc-inj3ct10n}
