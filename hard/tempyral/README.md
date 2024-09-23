@@ -7,3 +7,13 @@ It is a side channel timing attack. Make a script to try a bunch of stuff, chara
 ### Flag
 CTF{s1d3_ch4nn3l_4_u}
 
+### Building
+```bash
+docker build -t tempyral .
+```
+
+### Deployment
+```bash
+docker create -n tempyral-inst -t localhost/tempyral
+docker start tempyral-inst
+```

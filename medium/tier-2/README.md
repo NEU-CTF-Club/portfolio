@@ -9,3 +9,9 @@ Use grep to get the flag! For example. `grep -ir ctf`
 
 ### Flag
 CTF{pr1v3sc-inj3ct10n}
+
+### Deployment
+```bash
+# Substitute podman if desired
+docker compose up -d
+```

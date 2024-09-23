@@ -9,25 +9,31 @@ import javax.crypto.spec.SecretKeySpec;
 
 public class Main {
   private static final String PASSWORD = "fiNRXxvfWQRLIYvBNCz0b1HzFRcoqsi9";
+
   public static void main(String[] args) {
     System.out.println("i'm so lonely at the bottom of the ocean, i need someone to talk to");
     long unixMillis = System.currentTimeMillis();
     String signString = String.format("%d", unixMillis);
     try {
       URL url = new URL("https://devin.dog/ctf/securedeepblue.php?timestamp=" + signString);
+
       HttpURLConnection con = (HttpURLConnection) url.openConnection();
       con.setRequestMethod("GET");
       con.setRequestProperty("X-Autograph", sign(signString));
       con.setRequestProperty("User-Agent", "NEU-CTFApp/1.0");
+
       BufferedReader in = new BufferedReader(
               new InputStreamReader(con.getInputStream()));
       String inputLine;
       StringBuffer content = new StringBuffer();
+
       while ((inputLine = in.readLine()) != null) {
         content.append(inputLine);
       }
+
       in.close();
       con.disconnect();
+
       if (content.toString().contains("CTF{")) {
         System.out.println("someone replied! they told me " + content);
       } else {
@@ -38,6 +44,7 @@ public class Main {
       System.exit(1);
     }
   }
+
   public static String sign(String plaintext) {
     try {
       SecretKeySpec keySpec = new SecretKeySpec(PASSWORD.getBytes(), "AES");
@@ -48,6 +55,8 @@ public class Main {
     } catch (Exception e) {
       System.exit(1);
     }
+
     return "";
   }
+
 }

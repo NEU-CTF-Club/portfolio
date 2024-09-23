@@ -27,8 +27,7 @@ int main() {
   curl = curl_easy_init();
 
   if (curl) {
-    char received_data[1000] =
-        ""; // Adjust the size based on your expected data size
+    char received_data[1000] = ""; // Adjust the size based on your expected data size
 
     char URL[60] = "";
     URL[59] = '/';

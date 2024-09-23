@@ -1,40 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stormy Seas</title>
-  <style>
-    body {
-      background-image: url('sea.jpg');
-      color: white;
-      font-family: Arial, sans-serif;
-    }
-    #flag {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      -moz-user-select: -moz-none;
-      -khtml-user-select: none;
-      -webkit-user-select: none; -ms-user-select: none;
-      user-select: none;
-      animation-name: spin;
-      animation-duration: 3000ms;
-      animation-iteration-count: infinite; animation-timing-function: linear;
-    }
-    @keyframes spin {
-      from {
-        transform:rotate(0deg);
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stormy Seas</title>
+    <style>
+      body {
+        background-image: url('sea.jpg');
+        color: white;
+        font-family: Arial, sans-serif;
       }
-      to {
-        transform:rotate(360deg);
+
+      #flag {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none; -ms-user-select: none;
+        user-select: none;
+        animation-name: spin;
+        animation-duration: 3000ms;
+        animation-iteration-count: infinite; animation-timing-function: linear;
       }
-    }
-  </style>
-</head>
-<body>
-  <marquee scrollamount="50", id="flag">CTF{w3b_w4ves}</marquee>
-</body>
+
+      @keyframes spin {
+        from { transform:rotate(0deg); }
+        to { transform:rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <marquee scrollamount="50" id="flag">CTF{w3b_w4ves}</marquee>
+  </body>
 </html>
 

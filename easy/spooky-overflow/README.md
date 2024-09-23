@@ -7,3 +7,8 @@ and you will get the flag.
 
 ### Flag
 CTF{buff3r_b33f_pwn}
+
+### Building
+```bash
+make build
+```

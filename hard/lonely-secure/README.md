@@ -9,3 +9,7 @@ nothing to help with the connection issues, so you'll still need to try and talk
 ### Flag
 CTF{und3r_the_se4_d00_d00_d00}
 
+### Building
+```bash
+make build
+```
