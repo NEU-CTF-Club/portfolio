@@ -8,3 +8,8 @@ to mouse over it (in Ghidra) or convert it in other ways.
 
 ### Flag
 CTF{123_http_m3}
+
+### Building
+```bash
+make build
+```

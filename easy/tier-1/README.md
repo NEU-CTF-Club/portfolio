@@ -6,3 +6,9 @@ Simple command injection  --> "x && cat flag.txt"
 
 ### Flag
 CTF{l0l-1nj3ct10n}
+
+### Deployment
+```bash
+# Substitute podman if desired
+docker compose up -d
+```

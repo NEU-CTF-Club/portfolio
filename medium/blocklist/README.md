@@ -6,3 +6,14 @@ Clear all values in the ‘blocklist’ with `[blocklist.pop() for i in range(le
 
 ### Flag
 CTF{p0p_0ut_0f_j41l}
+
+### Building
+```bash
+docker build -t blocklist .
+```
+
+### Deployment
+```bash
+docker create -n blocklist-inst -t localhost/blocklist
+docker start blocklist-inst
+```

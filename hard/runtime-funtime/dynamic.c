@@ -5,11 +5,13 @@ void buildFlag(char*);
 int main() {
 	int debug = 0;
 	printf("i'm buried at the bottom of the ocean!\n");
-	if(debug == 1) {
+
+	if (debug == 1) {
 		char sorry[512 + 1];
 		buildFlag(sorry);
 		printf("DEBUG FLAG ENABLED, PRINTING BUILT FLAG: %s\n", sorry);
 	}
+
 	return 0;
 }
 

@@ -32,8 +32,8 @@ if ($autograph === $timestampParam) {
         $randomNumber = rand(0, 500);
 
         // Check if the random number is 384
-        if ($randomNumber == 384) {
-           echo "CTF{und3r_the_se4_d00_d00_d00}";
+        if ($randomNumber === 384) {
+            echo "CTF{und3r_the_se4_d00_d00_d00}";
         } else {
             echo "no <3";
         }
