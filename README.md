@@ -1,4 +1,4 @@
-## Protfolio
+## NEU CTF Club Brief Portfolio
 
 This repository contains a collections of challenges developed by the NEU CTF Club.
 
